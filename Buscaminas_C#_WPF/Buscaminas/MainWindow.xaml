@@ -1,0 +1,56 @@
+﻿<!-- Alexandra Raluca Savu -->
+<Window x:Class="Buscaminas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Buscaminas"
+        mc:Ignorable="d"
+        Title="Buscaminas" Height="480" Width="320"
+        BorderBrush="DarkGray" BorderThickness="5"
+        Background="Gray">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <!-- Controles superiores: marcador de minas, boton de reinicio y temporizador-->
+        <Grid Grid.Row="0" Margin="5" Background="DarkGray" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <!-- Contador de minas-->
+                <ColumnDefinition Width="Auto"/>
+                <!-- Boton de reinicio-->
+                <ColumnDefinition Width="*"/>
+                <!-- Temporizado-->
+            </Grid.ColumnDefinitions>
+
+            <!-- Marcador de minas-->
+            <TextBlock x:Name="ContadorMinas" Grid.Column="0" Text="010" FontSize="25" Foreground="Red" Background="Black"
+                       HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" Height="50" TextAlignment="Center" Margin="10,0,0,0"
+                       FontFamily="pack://application:,,,/Assets/Fonts/#MINE-SWEEPER"/>
+
+
+
+            <!-- Boton de reinicio -->
+            <Button Name ="BotonReset" Grid.Column="1" Width="50" Height="50" Click="BotonReset_Click" BorderBrush="Gray" BorderThickness="5"
+                    Content="😊" FontSize="25"  Foreground="Orange" Margin="5,5,5,5" Background="LightGray"
+                    FontFamily="pack://application:,,,/Assets/Fonts/#MINE-SWEEPER" HorizontalAlignment="Center" VerticalAlignment="Center" FlowDirection="RightToLeft"/>
+
+            <!-- Reloj -->
+            <TextBlock Name="Tiempo" Grid.Column="2" Text="000" FontSize="25" Foreground="Red" Background="Black"
+                       HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" Height="50" TextAlignment="Center" Margin="30,0,0,0"
+                       FontFamily="pack://application:,,,/Assets/Fonts/#MINE-SWEEPER"/>
+
+        </Grid>
+        <!-- Tablero de botones -->
+        <Grid Name="Tablero"  Grid.Row="1" Margin="5" Background="DarkGray">
+        </Grid>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Estilo para las filas de botones -->
+    <style name="ButtonRow">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/blacker</item>
+    </style>
+
+    <!-- Estilo para los botones de números -->
+    <style name="ButtonNumber">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name= "android:layout_margin">3dp</item>
+        <item name= "android:padding">6dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@color/blackish</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/offwhite</item>
+    </style>
+
+    <!-- Estilo para los botones de operadores -->
+    <style name="ButtonOperator">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textAlignment">center</item>
+        <item name= "android:layout_margin">3dp</item>
+        <item name= "android:padding">6dp</item>
+        <item name="android:background">@color/blackish</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/offwhite</item>
+
+    </style>
+
+</resources>

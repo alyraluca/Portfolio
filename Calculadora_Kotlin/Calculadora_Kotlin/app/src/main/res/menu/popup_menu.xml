@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- CLase para el menu  -->
+    <item
+        android:id="@+id/menu_how_to_use"
+        android:title="Como útilizar"
+        app:showAsAction="never"
+        android:fontFamily="@font/karla_variable_font_wght"/>
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="Acerca de la app"
+        app:showAsAction="never"
+        android:fontFamily="@font/karla_variable_font_wght"/>
+</menu>

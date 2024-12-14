@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blacker"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity">
+
+    <!-- Botón de alternar para cambiar entre calculadoras -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Interruptor -->
+        <ViewSwitcher
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/interruptor"
+            android:checked="true">
+            <!-- Texto del lado derecho -->
+            <TextView
+                android:id="@+id/scientificText"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center_vertical"
+                android:onClick="openScientificCalculator"
+                android:text="CALCULADORA CIENTIFICA"
+                android:fontFamily="@font/karla_variable_font_wght"
+                android:textColor="@color/offwhite" />
+        </ViewSwitcher>
+        <!-- Texto del lado izquierdo -->
+        <TextView
+            android:id="@+id/calculatorText"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:textAlignment="textEnd"
+            android:background="@color/green"
+            android:fontFamily="@font/karla_variable_font_wght"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="center_vertical|end"
+            android:text="CALCULADORA NORMAL    "
+            android:textColor="@color/offwhite" />
+
+    </FrameLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- EditText para mostrar los resultados  -->
+    <EditText
+        android:id="@+id/resultados"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:textColor="@color/offwhite"
+        android:textAlignment="textEnd"
+        android:textSize="40sp"
+        android:fontFamily="@font/karla_variable_font_wght"
+        app:layout_constraintTop_toBottomOf="@id/operaciones"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <!-- EditText para mostrar las operaciones  -->
+    <EditText
+        android:id="@+id/operaciones"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/offwhite"
+        android:textSize="25sp"
+        android:fontFamily="@font/karla_variable_font_wght"
+        android:background="@color/blackish"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <!-- Filas de botones con diferentes funcionalidades -->
+    <LinearLayout
+        style="@style/ButtonRow">
+
+        <!-- Boton de borrar/ limpiar  -->
+        <ImageButton
+            android:id="@+id/clear_text"
+            style="@style/ButtonNumber"
+            android:onClick="allClearAction"
+            android:background="@color/grey"
+            android:src="@drawable/c"
+            android:textColor="@color/offwhite"
+            android:clickable="true"
+            android:contentDescription="TODO" />
+
+        <!-- Boton de parentesis  -->
+        <ImageButton
+            android:id="@+id/parenthesis_button"
+            style="@style/ButtonOperator"
+            android:text="("
+            android:background="@color/grey"
+            android:src="@drawable/bracketround"
+            android:onClick="numberAction"
+            android:clickable="true"
+            android:contentDescription="(" />
+
+        <!-- Boton de parentesis  -->
+        <ImageButton
+            android:id="@+id/parenthesis_button2"
+            style="@style/ButtonOperator"
+            android:text=")"
+            android:background="@color/grey"
+            android:clickable="true"
+            android:src="@drawable/bracketroundright"
+            android:onClick="numberAction"
+            android:contentDescription=")" />
+        />
+
+        <!-- Boton para dividir  -->
+        <ImageButton
+            android:id="@+id/dividir"
+            style="@style/ButtonOperator"
+            android:background="@color/green"
+            android:src="@drawable/divide"
+            android:clickable="true"
+            android:onClick="operationAction"
+            android:text="/"
+            android:contentDescription="/" />
+
+    </LinearLayout>
+
+    <!-- Fila adicional de botones  -->
+    <LinearLayout
+        style="@style/ButtonRow">
+
+        <ImageButton
+            android:id="@+id/bt7"
+            style="@style/ButtonNumber"
+            android:src="@drawable/seven"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="7"
+            android:scaleType="centerInside"
+            android:onClick="numberAction"
+            android:contentDescription="7" />
+        <ImageButton
+            android:id="@+id/bt8"
+            style="@style/ButtonNumber"
+            android:gravity="center"
+            android:src="@drawable/eight"
+            android:clickable="true"
+            android:text="8"
+            android:onClick="numberAction"
+            android:contentDescription="8" />
+        <ImageButton
+            android:id="@+id/bt9"
+            style="@style/ButtonNumber"
+            android:src="@drawable/nine"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="9"
+            android:onClick="numberAction"
+            android:contentDescription="9" />
+
+        <!-- Boton para multiplicar  -->
+        <ImageButton
+            android:id="@+id/multiply"
+            style="@style/ButtonOperator"
+            android:text="*"
+            android:src="@drawable/cross"
+            android:clickable="true"
+            android:background="@color/green"
+            android:onClick="operationAction"
+            android:contentDescription="*" />
+
+    </LinearLayout>
+
+    <!-- Fila adicional de numeros  -->
+    <LinearLayout
+        style="@style/ButtonRow">
+
+        <ImageButton
+            android:id="@+id/bt4"
+            style="@style/ButtonNumber"
+            android:text="4"
+            android:clickable="true"
+            android:src="@drawable/four"
+            android:onClick="numberAction"
+            android:contentDescription="4" />
+        <ImageButton
+            android:id="@+id/bt5"
+            style="@style/ButtonNumber"
+            android:src="@drawable/five"
+            android:clickable="true"
+            android:text="5"
+            android:onClick="numberAction"
+            android:contentDescription="5" />
+        <ImageButton
+            android:id="@+id/bt6"
+            style="@style/ButtonNumber"
+            android:src="@drawable/six"
+            android:clickable="true"
+            android:text="6"
+            android:onClick="numberAction"
+            android:contentDescription="6" />
+        <!-- Boton para restar  -->
+        <ImageButton
+            android:id="@+id/restar"
+            style="@style/ButtonOperator"
+            android:text="-"
+            android:src="@drawable/minus"
+            android:clickable="true"
+            android:background="@color/green"
+            android:onClick="operationAction"
+            android:contentDescription="-" />
+
+    </LinearLayout>
+
+    <!-- Fila adicional de botones  -->
+    <LinearLayout
+        style="@style/ButtonRow">
+
+        <ImageButton
+            android:id="@+id/bt1"
+            style="@style/ButtonNumber"
+            android:text="1"
+            android:src="@drawable/one"
+            android:clickable="true"
+            android:onClick="numberAction"
+            android:contentDescription="1" />
+        <ImageButton
+            android:id="@+id/bt2"
+            style="@style/ButtonNumber"
+            android:text="2"
+            android:src="@drawable/two"
+            android:clickable="true"
+            android:onClick="numberAction"
+            android:contentDescription="2" />
+        <ImageButton
+            android:id="@+id/bt3"
+            style="@style/ButtonNumber"
+            android:text="3"
+            android:src="@drawable/three"
+            android:clickable="true"
+            android:onClick="numberAction"
+            android:contentDescription="3" />
+        <!-- Boton para sumar  -->
+        <ImageButton
+            android:id="@+id/sumar"
+            style="@style/ButtonOperator"
+            android:text="+"
+            android:src="@drawable/plus"
+            android:clickable="true"
+            android:background="@color/green"
+            android:onClick="operationAction"
+            android:contentDescription="+" />
+
+    </LinearLayout>
+
+    <!-- Fila adicional de botones  -->
+    <LinearLayout
+        style="@style/ButtonRow">
+
+        <ImageButton
+            android:id="@+id/coma"
+            style="@style/ButtonNumber"
+            android:text="."
+            android:src="@drawable/dot"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="numberAction"
+            android:contentDescription="." />
+        <ImageButton
+            android:id="@+id/bt0"
+            style="@style/ButtonNumber"
+            android:text="0"
+            android:src="@drawable/zero"
+            android:clickable="true"
+            android:onClick="numberAction"
+            android:contentDescription="0" />
+        <!-- Boton para el '+' y el '-'  -->
+        <ImageButton
+            android:id="@+id/minus_sign_button"
+            style="@style/ButtonOperator"
+            android:clickable="true"
+            android:src="@drawable/plusminus"
+            android:text="-/+"
+            android:onClick="minusSignAction"
+            android:contentDescription="TODO" />
+        <!-- Boton para el resultado  -->
+        <ImageButton
+            android:id="@+id/equal"
+            style="@style/ButtonOperator"
+            android:clickable="true"
+            android:background="@color/green"
+            android:src="@drawable/equals"
+            android:text="="
+            android:onClick="equalsAction"
+            android:contentDescription="=" />
+    </LinearLayout>
+</LinearLayout>
