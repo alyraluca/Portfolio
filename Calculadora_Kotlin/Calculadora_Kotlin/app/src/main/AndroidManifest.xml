@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Definición de la configuración y permisos de la aplicación -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MatMaster"
+        android:fontFamily="@font/karla_variable_font_wght"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CalculadoraKotlin"
+        tools:targetApi="31">
+
+        <!-- Actividad principal de la aplicación (lanzada al abrir la aplicación) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <!-- Filtro de intenciones para la actividad principal -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Actividad para la calculadora científica -->
+        <activity
+            android:name=".ScientificCalculatorActivity"
+            android:label="MatMaster"
+            android:fontFamily="@font/karla_variable_font_wght"/>
+        <!-- Actividad para el menu -->
+        <activity
+            android:name=".HowToUseVideoActivity"
+            android:label="Como utilizar la aplicación"
+            android:fontFamily="@font/karla_variable_font_wght"/>
+        <!-- Actividad para el menu -->
+        <activity
+            android:name=".AboutActivity"
+            android:label="Sobre la Aplicación"
+            android:fontFamily="@font/karla_variable_font_wght"/>
+    </application>
+</manifest>

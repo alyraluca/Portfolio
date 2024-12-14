@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Estilo del tema principal de la aplicación -->
+    <style name="Theme.CalculadoraKotlin" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/blackish</item>
+        <item name="colorPrimaryVariant">@color/blacker</item>
+        <item name="colorOnPrimary">@color/offwhite</item>
+    </style>
+
+    <!-- Estilo del tema para la calculadora científica -->
+    <style name="AppTheme.ScientificCalculator" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item> <!-- mostrar la barra de acción -->
+        <item name="windowNoTitle">true</item> <!-- No mostrar el título de la ventana -->
+        <item name="colorPrimary">@color/blacker</item>
+    </style>
+</resources>

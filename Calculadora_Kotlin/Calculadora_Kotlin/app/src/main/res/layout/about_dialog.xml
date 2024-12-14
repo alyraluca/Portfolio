@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Clase para el layout de la parte del 'Acerca de' del menu   -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a MatMaster, la primera versión de una aplicación de calculadora científica diseñada por Alexandra Savu. Soy estudiante de la clase 'PROGRAMACIÓN MULTIMEDIA Y DISPOSITIVOS MÓVILES', y esta aplicación es el resultado de mi dedicación y pasión por la programación.
+
+MatMaster no es solo una calculadora, es una herramienta diseñada para hacer que tus cálculos científicos sean más eficientes y accesibles. Con una interfaz intuitiva y funciones avanzadas, MatMaster está aquí para simplificar tus tareas matemáticas y hacerte la vida más fácil.
+
+Esta aplicación fue creada con amor por la programación y con el objetivo de ofrecer una experiencia fluida y poderosa para todos los usuarios. Espero que disfrutes usando MatMaster tanto como disfruté desarrollándola.
+
+¡Gracias por elegir MatMaster para tus necesidades matemáticas!"
+        android:paddingTop="16dp"
+        android:fontFamily="@font/karla_variable_font_wght"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-Alexandra Savu, Desarrolladora de MatMaster"
+        android:fontFamily="@font/karla_variable_font_wght"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
