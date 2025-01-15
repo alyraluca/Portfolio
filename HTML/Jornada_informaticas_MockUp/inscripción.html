@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title class="titulo">Inicio</title>
+    <script src="https://kit.fontawesome.com/2e3acf05e5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Encabezado.-->
+    <div class="contenedor1">
+        <div class="encabezado">
+            <div class="imagen">
+                <img class="logo" src="img/logo.png" alt="logotipo de mi sitio">
+            </div>
+            <div class="espacio"></div>
+            <div class="informacion">
+                <h2 class="titulo">II Jornadas de Informática</h2>
+                <h5>Valencia, 3 y 4 de Febrero de 2024</h5>
+                <div class="redes">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu de navegación-->
+    <div class="barra">
+        <ul class="menu">
+            <li> <a href="index.html">Inicio</a></li>
+            <li> <a href="programación.html">Programación</a></li>
+            <li> <a href="inscripción.html">Registro de las jornadas</a></li>       
+        </ul>
+    </div>
+
+    <!--Formulario-->
+    <div class="formulario">
+        <form>    
+            <!--Datos personales-->
+            <fieldset>        
+            <legend>Datos personales</legend>
+            
+            <label for="nombre">Nombre:*</label><br>
+            <input type="text" id="nombre" name="fname" pattern="[A-Za-z ]{2,50}" required><br>
+
+            <label for="apellido">Apellido:*</label><br>
+            <input type="text" id="apellido" name="fapellido" pattern="[A-Za-z ]{2,128}" required><br>
+
+            <label for="email" >Email:*</label><br>
+            <input type="email" id="email" name="fname" required> <br>
+
+            <label for="tel">Télefono:*</label><br>
+            <input type="tel" id="tel" name="onlynumbers" pattern="[0-9 ]{9}" required><br>
+
+            <label for="foto">Foto de perfíl</label><br>
+            <input type="file" id="foto" name="fotop"><br><br>
+            </fieldset>
+            
+            <!--Perfil del usuario-->
+            <fieldset>
+            <legend>Perfil del usuario</legend>           
+            <label for="porque">¿Porque está interesado en participar en las jornadas?*</label><br>
+            <input type="text" id="porque" name="fporque" size="50" style="height: 100px;"  pattern="{2,500}" required><br><br>
+            
+            <fieldset >
+            <legend>Actividad profesional*</legend>
+            <input required type="radio" id="estudiante-bachillerato" name="actividad" value="estudiante-bachillerato">
+            <label class="prof" for="estudiante-bachillerato">Estudiante de bachillerato</label><br>
+
+            <input type="radio" id="estudiante-universitario" name="actividad" value="estudiante-universitario">
+            <label class="prof" for="estudiante-universitario">Estudiante universitario</label><br>
+
+            <input type="radio" id="doctorado" name="actividad" value="doctorado">
+            <label class="prof" for="doctorado">Doctorado</label><br>
+
+            <input type="radio" id="profesional-informatico" name="actividad" value="profesional-informatico">
+            <label class="prof" for="profesional-informatico">Profesional informático</label><br>
+
+            <input type="radio" id="profesor" name="actividad" value="profesor">
+            <label class="prof" for="profesor">Profesor</label><br>
+
+            <input type="radio" id="otros" name="actividad" value="otros">
+            <label class="prof" for="otros">Otros</label><br><br>
+            </fieldset>
+        
+
+
+            <fieldset >
+            <legend>¿En que talleres estas interesado?*</legend>
+
+            <input type="checkbox" id="taller1" name="talleres[]" value="taller1">
+            <label class="talleres" for="taller1">Computación Cuántica: la Próxima Revolución dela Informatica</label><br>
+
+            <input type="checkbox" id="taller2" name="talleres[]" value="taller2">
+            <label class="talleres" for="taller2">Animación 3D en la Industria del Videojuego</label><br>
+
+            <input type="checkbox" id="taller3" name="talleres[]" value="taller3">
+            <label class="talleres" for="taller3">Taller sobre análisis de dispositivos móviles</label><br>
+
+            <input type="checkbox" id="taller4" name="talleres[]" value="taller4">
+            <label class="talleres" for="taller4">Metodologias Ágiles y Transformación Digital</label><br>
+
+            <input type="checkbox" id="taller5" name="talleres[]" value="taller5">
+            <label class="talleres" for="taller5">Realidad virtual y aumentada: experiencias asequibles y utiles en educación </label><br>
+            
+            <input type="checkbox" id="taller6" name="talleres[]" value="taller6">
+            <label class="talleres" for="taller6">First Lego League</label><br><br>
+            </fieldset>
+
+            <label for="fechas" >Selecciones una de las tres opciones siguientes:*</label><br>
+            <select id="fechas" name="fjornadas" required >
+                <option value="" disabled selected hidden>--Selecciona una opción--</option>
+                <option value="both" >Asistiré los días 3 y 4 de febrero.</option>
+                <option value="3feb">Asistiré solo el día 3 de febrero.</option>
+                <option value="4feb">Asistiré solo el día 4 de febrero.</option>             
+            </select><br><br>
+            <input type="checkbox" id="acepto" name="condiciones" value="fcondiciones" required >
+            <label for="acepto">He leído y acepto la política de privacidad y el aviso legal.*</label><br><br>
+
+            <!--Boton de enviar-->
+            <input type="submit" value="Enviar">
+        </fieldset>
+     </form>
+    </div>
+
+    <!--Pie de página-->
+    <footer class="footer">
+        <div >
+            <p class="ftext">Actividad realizada por Alexandra Raluca, Savu, 
+                para la asignatura de Lenguajes de marcas <br>
+                Primer trimestre 2023/2024</p>
+        </div>
+    </footer>
+</body>    
+</html>

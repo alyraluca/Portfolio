@@ -3,7 +3,7 @@ Evaluable 3
 Autor: Alexandra Raluca, Savu 2º DAM
 03/11/2024
 '''
-#Corregida por MUA
+
 import threading
 import time
 import random

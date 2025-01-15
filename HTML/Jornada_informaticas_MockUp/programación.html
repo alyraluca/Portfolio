@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title class="titulo">Programación</title>
+    <script src="https://kit.fontawesome.com/2e3acf05e5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Encabezado.-->
+    <div class="contenedor1">
+        <div class="encabezado">
+            <div class="imagen">
+                <img class="logo" src="img/logo.png" alt="logotipo de mi sitio">
+            </div>          
+            <div class="informacion">
+                <h2 class="titulo">II Jornadas de Informática</h2>
+                <h5>Valencia, 3 y 4 de Febrero de 2024</h5>
+                <div class="redes">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu de navegación-->
+    <div class="barra">
+        <ul class="menu">
+            <li> <a href="index.html">Inicio</a></li>
+            <li> <a href="programación.html">Programación</a></li>
+            <li> <a href="inscripción.html">Registro de las jornadas</a></li>       
+        </ul>
+    </div>
+
+    <!--Tabla-->
+    <div class="programacion">
+        <h2 class="programa">Programa de las II Jornadas Informática</h2>
+        <div class="tablediv">
+            <table class="table" style="list-style-type: none; table-layout: fixed ; width: 940px; ">
+                <colgroup>
+                    <col style="width: 100px">
+                    <col style="width: 500px">
+                    <col style="width: 150px">
+                    <col style="width: 100px">
+                    <col style="width: 90px">
+                    </colgroup>
+                <thead>
+                    <tr>
+                    <th colspan="5" class="tabletit">Todos los talleres de las jornadas</th>    
+                     </tr>             
+               </thead> 
+               <tbody>
+                <tr id="tipos">
+                    <th>Fecha</th>
+                    <th>Taller</th>
+                    <th>Ponente</th>
+                    <th>Horario</th>
+                    <th>Ubicación</th>
+                </tr>
+                <tr >
+                    <td rowspan="4" class="fechas">3 de febrero</td>  
+                    <td>Computación Cuántica: la Próxima Revolución de la Informática</td>
+                    <td>Javier Garcia</td>
+                    <td><i class="fa-solid fa-clock"></i> 9 a 12h</td>
+                    <td><i class="fa-solid fa-location-dot"></i> Aulario I</td>
+                </tr>
+                <tr>  
+                    <td class="sombra">Animación 3D enla Industria del Videojuego</td>
+                    <td class="sombra">Diana Bautista</td>
+                    <td class="sombra"><i class="fa-solid fa-clock"></i> 12 a 14h</td>
+                    <td class="sombra"><i class="fa-solid fa-location-dot"></i> Aulario I</td>
+                </tr>
+                <tr>  
+                    <td>Taller sobre analisis de disositivos moviles</td>
+                    <td>Carlos Manrique</td>
+                    <td><i class="fa-solid fa-clock"></i> 16 a 18h</td>
+                    <td><i class="fa-solid fa-location-dot"></i> Aulario II</td>
+                </tr>
+                <tr>  
+                    <td class="sombra2">Metodologias Ágiles y Transformación Digital</td>
+                    <td class="sombra2">Alfredo Oltra</td>
+                    <td class="sombra2"><i class="fa-solid fa-clock"></i> 18 a 20h</td>
+                    <td class="sombra2"><i class="fa-solid fa-location-dot"></i> Aulario II</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="fechas">3 de febrero</td>  
+                    <td>Realidad virtual y aumentada: experiencias asequibles y utiles en educación</td>
+                    <td>Oscar Sapena</td>
+                    <td><i class="fa-solid fa-clock"></i> 10 a 12h</td>
+                    <td><i class="fa-solid fa-location-dot"></i> Aulario I</td>
+                </tr>
+                <tr>  
+                    <td class="sombra">La predicción del tiempo</td>
+                    <td class="sombra">Nuria Medina</td>
+                    <td class="sombra"><i class="fa-solid fa-clock"></i> 12 a 14h</td>
+                    <td class="sombra"><i class="fa-solid fa-location-dot"></i> Aulario I</td>
+                </tr>
+                <tr>  
+                    <td>First Lego League</td>
+                    <td>Pedro Sosa</td>
+                    <td><i class="fa-solid fa-clock"></i> 16 a 18h</td>
+                    <td><i class="fa-solid fa-location-dot"></i> Aulario II</td>
+                </tr>
+               </tbody>
+               <tfoot>
+                <tr>
+                    <td class="foot" colspan="5">La entrada a las actividades  es libre con <a href="inscripción.html">inscripción</a> previa.</td>
+                </tr>
+               </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!--Programa-->
+    <div class="programacion2">
+        <h2>Programación</h2>
+
+        <!--Primer día-->
+        <div class="lista1">
+            <ul>
+                <li><b><span class="negrita">3 de febrero de 2024</span></b></li>
+                <li><b>9h</b>, recepción de los participantes</li>
+                <li><b>10 a 14</b>, talleres
+                    <ol>
+                        <li>Computación cuántica</li>
+                        <li>Animación 3d</li>
+                    </ol></li>
+                <li><b>14 a 16 h</b>, pausa comida</li>
+                <li><b>16 a 20h,</b> talleres
+                <ol>
+                    <li>Dispositivos moviles</li>
+                    <li>Metodologias Ágiles</li>
+                </ol>
+                </li>
+            </ul>
+        </div>
+
+        <!--Segundo día-->
+        <div class="lista2">
+            <ul>
+                <li><b><span class="negrita">4 de febrero de 2024</span></b></li>
+                <li><b>9 a 14 h,</b> talleres
+                <ol>
+                    <li>Realidad virtual</li>
+                    <li>Predicción del tiempo</li>
+                </ol>
+             </li>
+                <li><b>14 a 16 h, </b>pausa comida</li>
+                <li><b>16 a 18 h, </b>talleres
+                <ol>
+                    <li>First Lego League</li>
+                </ol>
+                </li>
+                <li><b>18 a 18:30 h,</b> clausura</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Pie de página-->
+    <footer class="footer">
+        <div >
+            <p class="ftext">Actividad realizada por Alexandra Raluca, Savu, para la asignatura de Lenguajes de marcas <br>
+            Primer trimestre 2023/2024</p>
+        </div>
+    </footer>
+</body>    
+</html>
