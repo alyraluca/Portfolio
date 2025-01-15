@@ -1,0 +1,392 @@
+
+
+/*---------Para todas las páginas---------*/
+
+
+/*Cuerpo*/
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+
+/*Encabezado*/
+
+.contenedor1{
+    background-color:#216288;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+ div.encabezado{
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translateX(-50%);
+ }
+
+.logo{
+    float:left;
+    width: 200px;   
+}
+div.informacion{
+    float: right;
+    text-align: right;
+    margin: 0 auto;
+}
+h2.titulo{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 1px;
+}
+div.redes a i{
+    color: black;
+    transition: transform 0.3s ease;
+}
+div.redes a:hover i{
+    transform: scale(1.2);
+}
+
+
+/*Menu de Navegación*/
+
+div.barra{
+    background-color: #b8d414;
+    width: 100%;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 100%;
+    display: table;
+}
+ul.menu{
+    list-style-type: none;
+    margin:0;
+    padding: 0; 
+}
+ul.menu li{
+    margin:0;
+    display: inline-block;
+    float: none;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "sans-serif";
+}
+ul.menu li a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px;
+    display: block;  
+}
+ul.menu li a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
+
+/*Estilo de los titulos h1, h2 y h3*/
+h1, h2, h3 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/*Pie de página*/
+
+.footer{
+    background-color:black;
+    color: white;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;  
+}
+p.ftext{
+    text-align: left;
+    margin-left: 25%;
+   
+}
+
+
+
+/*---------Página de Inicio---------*/
+
+
+
+/*Primer nivel con video*/
+
+.div1{
+    width: 100%;  
+}
+h2.titulojornadas{
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);     
+}
+.jornadas{   
+    display: inline-block;
+    text-align: center;
+    margin-left: 50%;   
+    transform: translateX(-50%);   
+}
+.textojornada{
+    text-align: justify;
+    float: left;
+    width: 370px;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: translateX(-1%);
+    font-size: 16px;   
+}
+.video{
+    float: left;
+    margin-top: 10px;
+}
+
+
+/*Segundo nivel (donde y cuando se realiza)*/
+
+div.div2{
+    text-align: center;
+    background-color: #e5ffd4;
+    overflow: hidden;
+    padding: 25px;
+    padding-bottom: 30px;    
+}
+.div2 p{
+    font-size: 16px;
+}
+.donde{
+    text-align: left;
+    float: left;
+    width: 25%;
+    margin-left: 30%;
+    transform: translateX(-20%);   
+    font-size: 16px;
+}
+.donde p{
+    line-height: 2em;
+}
+.donde a{
+    text-decoration: underline;
+}
+.donde h3{
+    border-bottom: 1.7px dashed yellowgreen;
+}
+.links a{
+    color: black;
+}
+.cuando{
+    float: left;
+    text-align: left;  
+    font-size: 16px; 
+}
+.cuando p{
+    line-height: 2em;
+}
+
+.cuando h3{
+    border-bottom: 1.7px dashed yellowgreen;
+}
+.cuando a{
+    text-decoration: underline;
+} 
+
+/*Tercer nivel (Eventos)*/
+.div3{   
+    display: inline-block;   
+    margin-left: 50%;   
+    transform: translateX(-50%);      
+}
+.div3 img{
+    width: 260px;
+    height: 125px;
+}
+.div3 p{
+    font-size: 12px;
+    text-align:left;
+    width: 260px;  
+}
+.tituloeventos{
+    margin-top: 30px;
+    text-align: center;
+}
+.img1, .img2, .img3, .img4, .img5, .img6{
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 0 50px;     
+}
+.img4{
+    clear: both;
+    text-align: center;
+}
+
+
+
+/*---------Página de Programación---------*/
+
+
+
+/*Tabla*/
+
+.programa{
+    text-align: center;
+    margin-top: 40px;
+}
+.tablediv{
+    overflow: hidden;
+    border: 30px
+}
+.table{
+    border-spacing: 2px;
+    border-color: white;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+tbody tr{
+    font-size: 12px;
+}
+.tabletit{
+    background-color: black;
+    color: white;
+    border-color: white;
+    font-size: 18px;   
+}
+tr td{
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+#tipos{
+    background-color: #b8d414;
+    text-align: left;
+    font-size: 12px;
+}
+.td .fechas{
+    text-align: center;
+}
+tr:nth-child(odd){
+    background-color: #e5ffd4;
+}
+.sombra2{  
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.foot{
+    text-align: center;
+    background-color: white;
+}
+
+
+/*Programación con listas*/
+
+.lista2 ul li{
+    list-style: none;
+}
+.lista1 ul li{
+    list-style: none;
+}
+.lista1 ol li{
+    list-style: decimal;
+}
+.lista2 ol li{
+    list-style: decimal;
+}
+.lista1{
+    float:left;  
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 16px; 
+    line-height: 2em;
+}
+.lista2{
+    float:left; 
+    font-size: 16px;
+    line-height: 2em;
+}
+.programacion2{
+    overflow: hidden;
+    background-color: #e5ffd4;   
+}
+.programacion2 h2{
+    margin-left: 7%;
+}
+.negrita{
+    line-height: 3em;
+    font-size: 1.1em;
+    background-color:#b8d414;
+}
+
+
+
+/*---------Página de Inscripción---------*/
+
+
+
+/*Formulario*/
+.formulario{
+    background-color: lightgrey;
+    padding: 30px;
+}
+form{
+    margin-left: 20%;
+    transform: translateX(-20%);
+    
+}
+form label{
+    font-size: 14px;
+    line-height: 2.5em;
+}
+#text{
+    align-items: start;
+    text-align: left;
+   
+}
+.talleres{
+    line-height: 1em;
+}
+.prof{
+    line-height: 1em;
+}
+fieldset{
+    width: 550px;
+    font-size: 14px;
+}
+legend{
+    font-weight: bolder;
+}
+input[type=submit]:hover {
+	background: #114358;
+	color: #ffff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+input[type=submit] {
+    background: #114358;
+	color: white;
+	border-style: outset;
+	border: none;
+	height: 50px;
+	width: 100px;
+	font-family: "Fjalla one","sans-serif";
+	text-shadow: none;
+}
+.required{
+    color: #ff0000;
+}
+input:invalid {
+    border: 2px solid red;
+  }
+  input:valid {
+    border: 2px solid greenyellow;
+  }
+
+

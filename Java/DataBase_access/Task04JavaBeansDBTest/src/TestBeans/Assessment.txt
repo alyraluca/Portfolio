@@ -1,0 +1,21 @@
+1. We opted to have 6 classes to manage the operations and a main class to run our program.
+In the DBBean class we manage our connections to the database and our methods that helped us to
+modify and get information from out database. We have a source class called PlayerBean that have 
+new setters and getters that get to knock at the door of the listener(s) by calling firePropertyChange with a
+tag name and an old and new value (mainly the matches and deferral status and dates). Then we have
+the MessageBean that handles the messages that get inserted in the tables depending on the property that gets triggered
+in the main programme.The GameBean and DeferralBean classes also handle  database updates depending on the property event fired.
+Finally, our TestPlayer (main programme) is in charge of assigning the object source to the listeners 
+and triggering the property change events by assigning new values to different properties.
+
+2. My main difficulty was connecting to the database I kept getting null pointers. Then I had problems
+setting the object source and listeners in the main programme. It wouldn't trigger the listeners and it wouldn't make the
+appropriated changes and it would only show the messages. Also at first, I would trigger the database changes
+and updates from the main programme instead of the listeners and I think that's why I had that problem. I also had
+problems with the deferral id and I had to generated randomly.
+
+3.We could improve the activity by randomly deciding the result of a game (Pending, won, lost, draws) or
+the ability to see the players game history, wins and losses. 
+
+ 
+
